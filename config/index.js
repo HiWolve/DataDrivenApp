@@ -3,7 +3,7 @@ module.exports = {
   port: process.env.PORT || 8080,
   db: {
     username: process.env.DB_USERNAME,
-    password: process.envx.DB_PASSWORD,
+    password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     host: process.env.DB_HOST,
   },
