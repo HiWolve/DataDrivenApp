@@ -12,14 +12,14 @@ app.use(morgan('dev'));
 app.use(routes);
 
 app.use((req, res, next) => {
-  const err = new Error('The requested page could\'t be found.');
+  const err = new Error('The requested page couldn\'t be found.');
   err.status = 404;
   next(err);
 })
 
 app.use((err, req, res, next) => {
   if (process.env.NODE_ENV === 'production') {
-
+    // this is not being tested in production right now.
   } else {
     console.error(err);
   }
