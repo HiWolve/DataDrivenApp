@@ -5,13 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-node",
+            "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "start"
             ],
-            "program": "${workspaceFolder}/app.js"
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js"
+            ],
+            "restart": true,
+            "console": "integratedTerminal",
+            "program": "${workspaceFolder}/bin/www",
+            "envFile": "${worspaceFolder}/.env"
         }
     ]
 }
