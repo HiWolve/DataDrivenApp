@@ -25,12 +25,12 @@
     "per-env": "^1.0.2",
     "pg": "^8.7.1",
     "pug": "^3.0.2",
-    "sequelize": "^6.9.0"
+    "sequelize": "^5.22.4"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
     "dotenv-cli": "^4.1.0",
     "nodemon": "^2.0.14",
-    "sequelize-cli": "^6.3.0"
+    "sequelize-cli": "^5.5.1"
   }
 }
